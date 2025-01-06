@@ -29,7 +29,7 @@ namespace MakeFNT
             int fx = bmp.Width / 16;
             int fy = bmp.Height / 16;
             Console.WriteLine($"/* {readName} chr size={fx}x{fy} */");
-            Console.WriteLine($"unsigned char {Path.GetFileNameWithoutExtension(readName)}[][32]={{");
+            Console.WriteLine($"const unsigned char {Path.GetFileNameWithoutExtension(readName)}[][32]={{");
             for (int y = 0; y < fy; ++y)
             {
                 for (int x = 0; x < fx; ++x)
